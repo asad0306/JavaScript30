@@ -15,29 +15,50 @@
       const p = document.querySelector('p');
       p.style.color = '#BADA55';
       p.style.fontSize = '50px';
-    }
+    } 
 
     // Regular
+    console.log('hello Jaan!!');
 
     // Interpolated
 
+    console.log('Hello i am a %s string!', 'js');
+
     // Styled
 
+    console.log('%c I am some great text',  'background: red; color: white; font-size: 50px; text-shadow: 10px 10px 0 blue');
+
     // warning!
-
+    console.warn('NO OOOOO');
     // Error :|
-
+    console.error('HOLLY SHIT!!');
     // Info
-
+    console.info('ARGENTINA WON THE FIFA WORLD CUP');
     // Testing
-
+    const p = document.querySelector('p');
+    console.assert(p.classList.contains("ouch"), 'You did wrong calculation!!')
     // clearing
-
+    console.clear();
     // Viewing DOM Elements
+    console.log(p);
+    console.dir(p);
 
+    console.clear();
     // Grouping together
+    dogs.forEach(dogs => {
+      console.group(`${dogs.name}`)
+      console.log(`this is ${dogs.name}`);
+      console.log(`${dogs.name} is ${dogs.age} years old`);
+      console.log(`${dogs.name} is ${dogs.age * 7} dog years old`);
+      console.groupEnd(`${dogs.name}`);
+    });
+
 
     // counting
+
+    console.count('Jaan');
+    console.count('Jaan');
+    console.count('Jaan');
 
     // timing
 
